@@ -1,5 +1,4 @@
-require "ezcater_matchers/version"
+require "rspec"
 
-# Top-level gem module
-module EzcaterMatchers
-end
+require "ezcater_matchers/match_ordered_array"
+require "ezcater_matchers/version"
