@@ -1,2 +1,5 @@
 inherit_gem:
   ezcater_rubocop: conf/rubocop.yml
+
+Ezcater/PrivateAttr:
+  Enabled: false
