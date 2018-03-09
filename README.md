@@ -1,18 +1,15 @@
 # ezcater_matchers
 
-Welcome to your new gem! In this directory, you'll find the files you need to be
-able to package up your Ruby library into a gem. Put your Ruby code in the file
-`lib/ezcater_matchers`. To experiment with that code, run 
-`bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem contains shared RSpec matchers.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "ezcater_matchers"
+group :test do
+  gem "ezcater_matchers"
+end
 ```
 
 And then execute:
@@ -25,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Matchers
+
+The matchers included in this gem are:
+
+* **have_been_destroyed**: To check that a model has (or has not) been destroyed.
+* **match_ordered_array**: To check that an array has exactly the expected, ordered elements.
 
 ## Development
 
