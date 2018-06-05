@@ -1,5 +1,8 @@
 # ezcater_matchers
 
+## v0.3.0
+- Add `match_db_timestamp` matcher
+
 ## v0.2.0
 - Add `have_been_destroyed` matcher
 
