@@ -27,6 +27,7 @@ Or install it yourself as:
 The matchers included in this gem are:
 
 * **have_been_destroyed**: To check that a model has (or has not) been destroyed.
+* **match_db_timestamp**: Compares two timestamps for equality with DB precision (drops nanoseconds).
 * **match_ordered_array**: To check that an array has exactly the expected, ordered elements.
 
 ## Development
@@ -35,7 +36,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then,
 run `rake spec` to run the tests. You can also run `bin/console` for an
 interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. 
+To install this gem onto your local machine, run `bundle exec rake install`.
 
 To release a new version, update the version number in `version.rb`, and then
 run `bundle exec rake release`, which will create a git tag for the version,
