@@ -1,5 +1,8 @@
 # ezcater_matchers
 
+## v0.4.0
+- Add `match_models` matcher
+
 ## v0.3.0
 - Add `match_db_timestamp` matcher
 
