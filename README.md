@@ -28,7 +28,36 @@ The matchers included in this gem are:
 
 * **have_been_destroyed**: To check that a model has (or has not) been destroyed.
 * **match_db_timestamp**: Compares two timestamps for equality with DB precision (drops nanoseconds).
+* **match_models**: Compare an enumerable to an expected list of ActiveRecord model objects (by id/type).
 * **match_ordered_array**: To check that an array has exactly the expected, ordered elements.
+
+### Examples
+
+#### match_models
+
+You can use `match_models` to simplify comparing enumerables/ActiveRecord relations to a single expected example:
+```
+my_model = build(:your_model)
+
+expect(YourModel.scope).to match_models(my_model)
+```
+
+You can use `match_models` to compare complex, heterogeneous result lists:
+
+```
+caterer = create(:caterer, name: "matches")
+brand = create(:caterer, name: "matches")
+
+expect(FullTextSearch.call("matches")).to match_models(caterer, brand)
+```
+
+You can also chain the `match_models` matcher to respect/ignore enumerable ordering, which is helpful in combatting flaky tests where order is not 100% deterministic:
+```
+caterer = create(:caterer, name: "matches")
+brand = create(:caterer, name: "matches")
+
+expect(RandomOrderedSearch.call("matches")).to match_models(caterer, brand).unordered
+```
 
 ## Development
 
