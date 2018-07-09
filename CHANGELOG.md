@@ -1,5 +1,8 @@
 # ezcater_matchers
 
+## v0.5.0
+- Open source release
+
 ## v0.4.0
 - Add `match_models` matcher
 
