@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe "have_been_destroyed matcher" do # rubocop:disable RSpec/DescribeClass
   let(:model_class) do
     Class.new do

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe EzcaterMatchers::MismatchedCollectionFailure do
   describe "#message" do
     it "reports unexpected order" do
