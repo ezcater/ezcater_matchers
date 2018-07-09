@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "ezcater_matchers/mismatched_collection_failure"
 
 RSpec::Matchers.define :match_ordered_array do |expected|

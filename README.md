@@ -1,5 +1,7 @@
 # ezcater_matchers
 
+[![CircleCI](https://circleci.com/gh/ezcater/ezcater_matchers.svg?style=svg)](https://circleci.com/gh/ezcater/ezcater_matchers)
+
 This gem contains shared RSpec matchers.
 
 ## Installation
@@ -69,10 +71,13 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 To release a new version, update the version number in `version.rb`, and then
 run `bundle exec rake release`, which will create a git tag for the version,
-push git commits and tags, and push the `.gem` file to
-[Artifactory](https://ezcater.jfrog.io).
+push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
 https://github.com/ezcater/ezcater_matchers.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Compare one or more ActiveRecord database Timestamp values, with db precision (drops nanoseconds)
 RSpec::Matchers.define :match_db_timestamp do |expected|
   match do |actual|
